@@ -7,6 +7,8 @@ function! myspacevim#before() abort
     \ }
   let g:neoformat_enabled_python = ['black']
   let g:neomake_open_list = 0
+  let g:pydocstring_doq_path = "/usr/local/bin/doq"
+  let g:vimfiler_direction = 'topleft'
 endfunction
 
 function! myspacevim#after() abort
