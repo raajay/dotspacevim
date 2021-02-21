@@ -12,4 +12,5 @@ function! myspacevim#before() abort
 endfunction
 
 function! myspacevim#after() abort
+  let g:tagbar_left = 0
 endfunction
