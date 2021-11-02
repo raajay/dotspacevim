@@ -6,6 +6,7 @@ function! myspacevim#before() abort
     \ 'args': ['-q', '-S', '-l', '79', '-'],
     \ }
   let g:neoformat_enabled_python = ['black']
+  let g:neomake_python_enabled_makers = ['pep8', 'pylint']
   let g:neomake_open_list = 0
   let g:pydocstring_doq_path = "/usr/local/bin/doq"
   let g:vimfiler_direction = 'topleft'
