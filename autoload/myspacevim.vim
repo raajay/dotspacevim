@@ -9,9 +9,17 @@ function! myspacevim#before() abort
   let g:neomake_python_enabled_makers = ['pep8', 'pylint']
   let g:neomake_open_list = 0
   let g:pydocstring_doq_path = "/usr/local/bin/doq"
-  let g:vimfiler_direction = 'topleft'
+  let g:vimwiki_list = [{'path': '/Users/raajay/vimwiki', 'ext': '.txt', 'syntax': 'default'}]
+  let g:vimwiki_global_ext = 0
+  let g:startify_custom_header = []
 endfunction
+
 
 function! myspacevim#after() abort
   let g:tagbar_left = 0
+
+  call deoplete#custom#option('omni_patterns', {
+    \ 'go': '[^. *\t]\.\w*',
+    \})
+
 endfunction
